@@ -12,16 +12,16 @@ I am always shocked to meet people who have never touched sheep or goats. I hope
 
 ## Credits
 
-velocity code: [Dr. Pippin Barr] (www.pippinbarr.com/).
+velocity code: [Dr. Pippin Barr](www.pippinbarr.com/).
 
-I watched [this video] (https://www.youtube.com/watch?v=V8aJnrXlGhYto) learn a bit more about using boolean. 
+I watched [this video](https://www.youtube.com/watch?v=V8aJnrXlGhYto) learn a bit more about using boolean. 
 
 This project uses [p5.js](https://p5js.org).
 
 ## Attribution
-music and sound effects sourced on [Pixaby] (www.pixaby.com/)
+music and sound effects sourced on [Pixaby](www.pixaby.com/)
 
 music: Ancient Persian Era by [Ontent](https://pixabay.com/users/onetent-15616180/)
 
-not used but baa sound effects: Sheep bleating by [Teoglas] (https://pixabay.com/users/teoglas-43857789/)
+not used but baa sound effects: Sheep bleating by [Teoglas](https://pixabay.com/users/teoglas-43857789/)
 
