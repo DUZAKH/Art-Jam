@@ -10,6 +10,14 @@
 
 "use strict";
 
+
+// allows music to begin playing
+let music = undefined;
+
+function preload(){
+    music = loadSound("assets/sounds/acient-persian-era-157734.mp3);
+    }
+
 // makes a sheep body variable and gives it velocity and acceleration
 // this allows the sheep to speed up over time creds dr pippin
 let sheep = {
@@ -260,6 +268,13 @@ function drawSheep() {
     rect(sheep.x - 1 * sheep.w / 4, sheep.y, sheep.w / 4, sheep.h / 3);
     pop();
 }
+
+//function that allows the music to play if mouse is presssed 
+function mousePressed(){
+    if (!music.isPlaying()){
+            music.play();
+    }
+            }
 
 //the function that shows text 
 //after boolean succeeds according to lightness
