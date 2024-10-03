@@ -6,9 +6,14 @@
  * shepherd's are a neccessity to their survival 
  * take care of Sheep, you can shave him by touching his fur circles!
  * try to do it before night fall..
+ * click on the screen for music!
  */
 
 "use strict";
+
+
+//music is undefined at the start before being loaded 
+let music = undefined
 
 
 // makes a sheep body variable and gives it velocity and acceleration
@@ -87,9 +92,12 @@ let fur = {
 
 let blueLightness; //this variable exists so the text can display
 
-/**
- * Creates the canvas, sets up color hue mode
- */
+
+function preload(){
+    music= loadSound("assets/sounds/music.mp3");
+}
+
+// creates canvas and sets up color hue mode
 function setup() {
     // defines canvas size
     createCanvas(480, 480);
@@ -116,7 +124,7 @@ function draw() {
     sheep.y += sheep.velocity.y;
 
     drawSky(); // the sky changes color following mouse check drawSky for more
-    drawSunMoon(); // sun/moon matches the sky and also change color/follow mouse
+    drawSunMoon(); // sun/moon matches the sky and also changes color/follows mouse
     if (blueLightness <= 0) {
         displayMessage();
     }// shows a text when the background is black
@@ -286,4 +294,11 @@ function handleFur() {
             furEllipse.y += 2; 
         }
     });
+}
+
+//once player clicks, music plays
+function mousePressed () {
+    if (!music.isPlaying()){
+        music.loop();
+    }
 }
