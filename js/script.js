@@ -14,9 +14,9 @@
 // allows music to begin playing
 let music = undefined;
 
-function preload(){
-    music = loadSound("assets/sounds/acient-persian-era-157734.mp3);
-    }
+function preload() {
+    music = loadSound("assets/sounds/acient-persian-era-157734.mp3");
+}
 
 // makes a sheep body variable and gives it velocity and acceleration
 // this allows the sheep to speed up over time creds dr pippin
